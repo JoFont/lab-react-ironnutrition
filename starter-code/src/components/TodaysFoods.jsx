@@ -7,8 +7,6 @@ const TodaysFoods = props => {
   useEffect(() => {
     if(props.list.length < 1) return;
 
-    console.log("Ran");
-
     let totalCalculatedCalories = 0;
     props.list.forEach(el => {
       totalCalculatedCalories += (el.quantity * el.calories);
